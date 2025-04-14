@@ -70,6 +70,16 @@ class AuthorModelTest(TestCase):
         author = Author.objects.get(id = 1)
         max_length = author._meta.get_field('last_name').max_length
         self.assertEquals(max_length, 100)
+#TODO: Need write tests for under classes
+class BookModelTest(TestCase):
+    pass
+
+class GenreModelTest(TestCase):
+    pass
+
+class BookInstanceModelTest(TestCase):
+    pass
+
 
     
 
